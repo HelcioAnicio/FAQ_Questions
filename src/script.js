@@ -4,8 +4,8 @@ const arrows = document.querySelector('.arrow');
 const divs = document.querySelectorAll('.div_informations');
 
 for (let index = 0; index < divs.length; index++) {
-    divs[index].addEventListener('change', ()=>{
-        questions = divs[index]
+    divs[index].addEventListener('click', ()=>{
+        // questions = divs[index]
         if (divs.classList.contains('show')) {
             arrows.classList.remove('arrow_rotate');
             divs.classList.remove('show');
