@@ -1,34 +1,48 @@
-var arrow = document.querySelectorAll('.arrow')
+let questions = 0;
 
-var div = document.querySelectorAll('.div_informations')
-    div.addEventListener('click',function(){
-    var efect = document.querySelectorAll('.div_informations');
+const arrows = document.querySelector('.arrow');
+const divs = document.querySelectorAll('.div_informations');
 
-    if (efect.classList.contains('show')) {
-        arrow.classList.remove('arrow_rotate');
-        efect.classList.remove('show');
-    } else {
-        arrow.classList.add('arrow_rotate');
-        efect.classList.add('show');
+for (let index = 0; index < divs.length; index++) {
+    divs[index].addEventListener('change', ()=>{
+        questions = divs[index]
+        if (divs.classList.contains('show')) {
+            arrows.classList.remove('arrow_rotate');
+            divs.classList.remove('show');
+        } else {
+            arrows.classList.add('arrow_rotate');
+            divs.classList.add('show');
+        }
+    });
+};
+
+/*
+divs.forEach((div) => 
+div.addEventListener('click', function(){
+            if (div.classList.contains('show')) {
+                arrows.classList.remove('arrow_rotate');
+                div.classList.remove('show');
+            } else {
+                arrows.classList.add('arrow_rotate');
+                div.classList.add('show');
+            }
+        })
+        );
+*/
+        
+
+/* 
+let feedback_level = 0
+
+const inputs = document.querySelectorAll('input');
+for (let index = 0; index < inputs.length; index++) {
+    inputs[index].addEventListener('change', ()=>{
+            feedback_level = inputs[index].value
+            document.querySelector('button').addEventListener('click', ()=>{
+                document.querySelectorAll('main')[0].style.display='none';
+                document.querySelectorAll('section')[0].style.display='flex';
+                document.querySelector('span').innerHTML=feedback_level
+            })
+        })
     }
-});
-
-// var questions = document.querySelectorAll(".div_informations");
-// questions.addEventListener('click',function(){
-//     alert('eu gosto de codar');
-// });
-
-
-// let feedback_level = 0
-
-// const div = document.querySelectorAll('input');
-// for (let index = 0; index < div.length; index++) {
-//     div[index].addEventListener('change', ()=>{
-//         feedback_level = div[index].value
-//         document.querySelector('button').addEventListener('click', ()=>{
-//             document.querySelectorAll('main')[0].style.display='none';
-//             document.querySelectorAll('section')[0].style.display='flex';
-//             document.querySelector('span').innerHTML=feedback_level
-//         })
-//     })
-// }
+s*/
