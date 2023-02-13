@@ -91,6 +91,7 @@ h1 {
     width: 100%;
     margin-top: 10px;
     cursor: pointer;
+    transition: 1s; 
 }
 
 .questions {
@@ -105,16 +106,19 @@ h1 {
     color: hsl(14, 88%, 65%);
 }
 
-.div_informations:nth-of-type(5) {
+.show {
     overflow: initial;
     height: max-content;
-    transition: 1s;
 }
 
 .arrow {
-    /* margin-left: 20%; */
+    margin-left: 5%;
     width: 5%;
     height: 40%;
+}
+
+.arrow_rotate {
+    rotate: 180deg;
 }
 
 a {
@@ -124,15 +128,19 @@ a {
 
 .answers {
     font: 400 1.7rem 'Kumbh Sans', sans-serif;;
+    color: hsl(240, 6%, 50%);
     margin-left: 5%;
     margin-bottom: 3%;
-    color: hsl(240, 6%, 50%);
+    width: 95%;
 }
 
 .answers img {
-    margin-left: 8%;
-    width: 7%;
+    margin-left: 5%;
+    width: 8%;
 }
+
+
+
 
 
 
