@@ -117,7 +117,7 @@ h1 {
     height: 40%;
 }
 
-.arrow_rotate {
+.div_informations.arrow_rotate .questions .arrow {
     rotate: 180deg;
 }
 
