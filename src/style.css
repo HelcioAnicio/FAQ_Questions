@@ -6,7 +6,7 @@
 }
 
 body, html{
-    font-size: 15px;
+    font-size: 16px;
     width: 100vw;
     /* width: 1366px; */
     height: 100vh;
@@ -42,7 +42,7 @@ main {
 main > div:nth-of-type(1) {
     width: 50%; 
     height: 100%;
-    border: 1px solid;
+    /* border: 1px solid; */
     background-image: url(./assets/illustration-woman-online-desktop.svg);
     background-repeat: no-repeat;
     background-position: 150% center;
@@ -67,20 +67,19 @@ main > .box_box > img {
 section {
     font-size: 2rem;
     box-sizing: border-box;
-    /* border: 1px solid; */
     width: 50%;
     height: 100%;
     padding: 5% 5% 3% 3%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    gap: 1%;
+    justify-content: space-between;
 }
 
 h1 {
     font: 700 4rem 'Kumbh Sans', sans-serif;
     /* border: 1px solid; */
     color: hsl(238, 29%, 16%);
+    margin: 0 0 0 4%;
 }
 
 /* DIV WITH QUESTIONS AND ANSWERS */
@@ -100,6 +99,10 @@ h1 {
     box-sizing: border-box;
     padding: 5% 0 0 5%;
     width: 100%;
+}
+
+.questions:focus {
+    color: hsl(238, 29%, 16%);
 }
 
 .questions:hover{
@@ -139,9 +142,107 @@ a {
     width: 8%;
 }
 
+@media screen and (max-width:1440px) {
+    html, body {
+        font-size: 9px;
+    }
 
+    .div_informations {
+        height: 11%;
+    }
 
+    .show {
+        overflow: initial;
+        height: max-content;
+    }
+}
 
+@media screen and (max-width: 1024px) {
+    html, body {
+        font-size: 6px;
+    }
+
+    section {
+        padding: 2% 5% 2% 3%;
+    }
+
+    .div_informations {
+        height: 10%;
+        margin-top: 0;
+    }
+
+    .show {
+        overflow: initial;
+        height: max-content;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    html, body {
+        font-size: 5px;
+    }
+
+    main {
+        width: 50%; 
+        height: 80%; 
+        display: flex;
+        justify-content: center;
+        align-items: initial;
+        flex-wrap: wrap;
+        background-image: url(./assets/bg-pattern-mobile.svg);
+        background-position: initial;
+        background-size: initial;
+        background-repeat: no-repeat;
+    }
+    
+    /* BOX'S BACKGROUND */
+    main > div:nth-of-type(1) {
+        width: 100%; 
+        height: 35%;
+        /* border: 1px solid; */
+        background-image: url(./assets/illustration-woman-online-mobile.svg);
+        background-repeat: no-repeat;
+        background-position: initial;
+        background-size: initial;
+    }
+    
+    /* BOX OF BOX ABSOLUTE */
+    main > .box_box:nth-of-type(2){
+        position:initial;
+        top: initial;
+        left: initial;
+        width: initial;
+        display: none;
+    }
+      
+    
+    /* THE RIGHT SIDE */
+    section {
+        width: 70%;
+        height: 65%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: initial;
+    }
+    
+
+    .div_informations {
+        height: 12%;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+        width: 100%;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    .show {
+        overflow: initial;
+        height: max-content;
+    }
+
+}
 
 
 
