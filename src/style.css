@@ -33,26 +33,27 @@ main {
     justify-content: space-between;
     align-items: flex-end;
     background-image: url(./assets/bg-pattern-desktop.svg);
-    background-position: -450% 60%;
-    background-size: 90% 170%;
+    background-position: -450% 70%;
+    background-size: 90% 135%;
     background-repeat: no-repeat;
 }
 
 /* BOX'S BACKGROUND */
 main > div:nth-of-type(1) {
     width: 50%; 
-    height: 85%;
+    height: 100%;
+    border: 1px solid;
     background-image: url(./assets/illustration-woman-online-desktop.svg);
     background-repeat: no-repeat;
-    background-position: 200% 110%;
+    background-position: 150% center;
     background-size: 110%;
 }
 
 /* BOX OF BOX ABSOLUTE */
 main > .box_box:nth-of-type(2){
-    position: fixed;
-    top: 51%;
-    left: 12%;
+    position:absolute;
+    top: 46%;
+    left: 13%;
     width: 13%;
 }
 
@@ -91,7 +92,6 @@ h1 {
     width: 100%;
     margin-top: 10px;
     cursor: pointer;
-    transition: 1s; 
 }
 
 .questions {
