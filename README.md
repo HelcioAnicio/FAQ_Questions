@@ -1,15 +1,6 @@
 # FAQ Questions
 
-Project under construction...
-Currently: https://faq-questions.vercel.app/
-
-
-image of the final designer of the project
-![desktop-design](https://user-images.githubusercontent.com/117602073/217695406-29d7f359-d2c6-4445-a3a4-59f0b5adb01c.jpg)
-
-
-<!-- 
-This site is a page about feedback at the end of some service or assistance. Then, at the end, a screen with 5 numbers will appear and the person will choose the evaluation for the service or care, then another screen will appear thanking you for the time dedicated.
+This project is about one page "Frequently asked questions" or FAQ. It is used a lot when some questions happen a lot, so we leave the answers ready.
 
 ## Table of contents
 
@@ -32,71 +23,84 @@ This site is a page about feedback at the end of some service or assistance. The
 ### The challenge
 
 The users should be able to:
-- A content of thanks for the dedicated time.
-- It's possible to see 5 options to evaluatioin.
-- The buttons are interactives.
-- A screen informing which note was chosen.
+- See 5 questions very comum about any project.
+- It's possible to click on any question.
+- See the answers.
+- Answers with links, which direct you to solve the question.
 - View the optimal layout depending on their device's screen size.
 
 ### Screenshot
-![image](https://user-images.githubusercontent.com/117602073/215917902-ce1d4523-fb7b-4c08-b058-13aecf5f4253.png)
+![desktop-design](https://user-images.githubusercontent.com/117602073/217695406-29d7f359-d2c6-4445-a3a4-59f0b5adb01c.jpg)
 
 ### Links
 
-- https://rating-feedback.vercel.app/
+- https://faq-questions.vercel.app/
 
 ## My process
 
 ### Built with
 
-- Semantic HTML 
-- CSS custom properties
+- Semantic HTML5
+- CSS3 custom properties
 - Flexbox
 - Responsiveness
 - Pseudo-classes
 - JavaScript
 - Repeat loop
+- Conditional
+- Metods
 
 ### What I learned
 
-On this project i implemented by first JS with a repeat loop.
+How to use "forEach" to select one of several element options and position background.
+
+```CSS
+.div_illustration {
+    width: 45%;
+    height: 45%;
+    top: 3%;
+    left: 27%;
+    position: absolute;
+    background-image: url(./assets/illustration-woman-online-mobile.svg);
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+}
+```
 
 ```JS
-let feedback_level = 0
+const divs = document.querySelectorAll('.div_informations');
+divs.forEach((div) => {
+        div.addEventListener('click',() => {
+            if (div.classList.contains('show','arrow_rotate')) {
+                div.classList.remove('show','arrow_rotate')
+            
+            } else { 
+                divs.forEach(div => div.classList.remove('show','arrow_rotate'))
+                 div.classList.add('show','arrow_rotate')
+            }
+    });
+});
 
-const inputs = document.querySelectorAll('input');
-for (let index = 0; index < inputs.length; index++) {
-    inputs[index].addEventListener('change', ()=>{
-        feedback_level = inputs[index].value
-        document.querySelector('button').addEventListener('click', ()=>{
-            document.querySelectorAll('main')[0].style.display='none';
-            document.querySelectorAll('section')[0].style.display='flex';
-            document.querySelector('span').innerHTML=feedback_level
-        })
-    })
-}
 ```
 
 ### Continued development
 
-I want to creat more websites with JS, it's so much incredible to see in action.
+I pretend to learn how to use API's in my projects.
 
 ### Useful resources
 
 This resource helped me a lot to understand how to do to implemented JS.
-https://www.w3schools.com/jsref/default.asp
-https://www.w3schools.com/jsref/dom_obj_document.asp
+https://www.w3schools.com/
+https://developer.mozilla.org/en-US/
+https://stackoverflow.com/
+
 
 ## Author
 
 - Linkedin - https://www.linkedin.com/in/helcio-anicio/ 
 - Vercel - https://vercel.com/helcioanicio
 
-
+<--
 ## Acknowledgments
-
-One person helped me understand how some functions in JS works. 
-Here below is his discord name and his github profile.
-Wemestery#5027
-https://github.com/DanielAbrante
  -->
