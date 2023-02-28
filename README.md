@@ -30,7 +30,7 @@ The users should be able to:
 - View the optimal layout depending on their device's screen size.
 
 ### Screenshot
-![desktop-design](https://user-images.githubusercontent.com/117602073/217695406-29d7f359-d2c6-4445-a3a4-59f0b5adb01c.jpg)
+![image](https://user-images.githubusercontent.com/117602073/221901206-8b649cfb-e066-448d-9dd1-5b8e2fa7f41d.png)
 
 ### Links
 
