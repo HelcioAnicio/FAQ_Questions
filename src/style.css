@@ -173,7 +173,7 @@ a {
     }
 }
 
-@media screen and (min-width: 1250px) and (min-height: 650px){
+@media screen and (min-width: 1250px) and (min-height: 600px){
     html, body {
         font-size: 25px;
     }
